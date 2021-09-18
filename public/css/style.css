@@ -1,0 +1,342 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:#ebebeb;
+}
+
+/*header*/
+
+header{
+    background-color: #EAC926;
+    margin-bottom: 10px;
+
+}
+
+header nav{
+    display:none;
+}
+
+.slogan{
+    font-size: 12px;
+    display:inline;
+}
+
+.contenedor-slogan{
+    text-align: center;
+}
+
+.contenedor-slogan i{
+    margin-right: 5px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    font-size: 2em;
+    color:white;
+    border-radius: 5px;
+    width: 40px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    padding:5px;
+}
+
+.header-logo-barra-celu-tablet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.barra-lupa{
+    width:50%;  
+    padding-left: 2px;
+    display: grid;
+    place-items: center;
+}
+
+.logo{
+    width:50%;
+}
+    
+header form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+header form button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    position:absolute;
+    right:15px;
+}
+
+
+    
+header article img{
+    width: 100vw;
+}
+
+/*footer*/
+
+
+footer article{
+    padding-top:20px;
+    padding-bottom: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+footer article i{
+    padding-bottom: 10px;
+    font-size: 2em;
+    color:#1259c3;
+}
+
+.Copyright{
+    text-align: left;
+    padding-left: 5px;
+}
+
+footer{
+    background-color: white;
+}
+
+
+/*main*/
+
+main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+main section article{
+    background-color: white;
+}
+
+
+.titulares{
+    font-size: 24px;
+    text-align: left;
+}
+
+
+.precios {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 15px;
+    width: 40px;
+    display: inline-block;
+}
+
+.descuentos{
+        color: #39b54a;
+        width: 70px;
+        display: inline-block;
+        margin-left: 40px;
+}
+
+.camion {
+    display: block;
+    font-size: 16px;
+    padding: 2px;
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+    transition: transform ,0.8s ;
+}
+
+.contenedorArticulo {
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    padding:15px;
+}
+
+.descripcion{
+   font-size: 16px;
+   display:none;
+   margin-top: 5px;
+ }
+
+main section article {
+    margin-top: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+}
+
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#0022aa !important}
+
+.w3-btn:hover {
+    box-shadow:none!important;
+}
+
+@media (min-width:708px) {
+
+    main section div.productosASD {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main section div.productosASD article {
+        width: 45%;
+    }
+
+    .contenedorArticulo{
+            padding:10px;
+    }
+
+    main section article{
+        box-shadow:  0px 0px 10px rgb(100, 100, 100);
+     }
+
+    .burger-menu{
+       display:none;
+    }
+
+    .descripcion{
+        display: block;
+    }
+
+    .descuentos{
+        display: inline;
+    }
+
+    header nav{
+      
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav a{
+        text-decoration: none;
+    }
+    
+    header nav li{
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header nav ul li i{
+        margin-left:5px;
+    }
+
+
+}
+
+
+@media (min-width:1200px){
+
+    main section div.productosASD {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main section div.productosASD article {
+        width: 22%;
+        transition: 700ms;
+        box-shadow: none;
+    }
+
+    .burger-menu{
+        display:none;
+     }
+
+     main section div.productosASD article:hover{
+       box-shadow:  0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.productosASD article i{
+        transition:700ms;
+    }
+
+    main section div.productosASD article:hover i{
+     transform: rotateZ(-90deg);        
+    }
+
+    .descripcion{
+     opacity:0%;
+     }
+
+    main section div.productosASD article:hover .descripcion{
+     opacity: 100%;
+     }
+
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav a{
+        text-decoration: none;
+    }
+    
+    header nav ul li{
+        display: inline-block;
+        padding: 15px;
+    }
+
+    header nav ul li i{
+        margin-left:5px;
+    }
+
+    .header-769{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-logo-barra-celu-tablet{
+     width: 50%;
+    }
+
+
+    .logo{
+        width: 30%;
+    }
+    
+
+
+
+    footer div{
+        display:flex;
+        }
+
+        footer article i:hover{
+            color:cadetblue;
+        }
+}
